@@ -17,8 +17,7 @@ A responsive pricing plan selection UI, built as part of a daily UI challenge. T
 
 ## 🍰 Live Demo
 
-You can see a live demo of this project [here]([YOUR_LIVE_DEMO_LINK_HERE](https://tuapuan83.github.io/daily-ui-pricing-plan/)).
-
+You can see a live demo of this project [https://tuapuan83.github.io/daily-ui-pricing-plan/]
 
 ## 📦 Getting Started
 
