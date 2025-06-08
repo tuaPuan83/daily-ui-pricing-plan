@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/bg.png") no-repeat bottom;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header p {
+  max-width: 900px;
+  margin: 2rem 0;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.header .tab {
+  margin-bottom: 4rem;
+}
+
+.tab .month,
+.tab .annual {
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tab .month {
+  background-color: #0066ff;
+  border-radius: 32px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  left: 10px;
+  z-index: 1;
+  color: #fff;
+}
+
+.tab .annual {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 2.3rem;
+  right: 20px;
+  color: #8f8f8f;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding: 40px 36px;
+  box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  background-color: #fff;
+  margin: 16px;
+  width: 30%;
+  transition: all.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card .card-header {
+  margin-bottom: 50px;
+}
+
+.card-header p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.card ul li {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.card ul li::marker {
+  color: #0066ff;
+}
+
+.card ul li:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.card .btn {
+  padding: 18px 42px;
+  background-color: #fff;
+  border: none;
+  color: #8f8f8f;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #0066ff;
+  color: #fff;
+}
+
+.btn.btn-blue {
+  background-color: #0066ff;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-header p {
+    font-size: 20px;
+  }
+
+  .card-header h2 {
+    font-size: 30px;
+  }
+
+  .card ul li {
+    font-size: 15px;
+  }
+}
